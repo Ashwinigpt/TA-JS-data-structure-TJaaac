@@ -20,69 +20,63 @@ for(let i = 0; i < numbers.length; i++) {
 }
 console.log(average);
 
+// 2nd method
+
+console.log(sum / numbers.length);
+
 // 4. Find the highest number in the array and print it to the console using console.log()
 
 let highest = numbers[0];
-for(let i = 0; i < numbers.length; i ++){
-    if(highest < numbers[i]){
-        highest = numbers[i];
+for(let number of numbers){
+    if(highest < number){
+        highest = number;
     }
 }
+console.log(highest);
 
 // 5. Find the lowest number in the array and print it to the console using console.log()
 
 let lowest = numbers[0];
-for(let i = 0; i < numbers.length; i ++){
-    if(lowest > numbers[i]){
-        lowest = numbers[i];
+for(let number of numbers){
+    if(lowest > number){
+        lowest = number;
     }
 }
+console.log(lowest);
 
 // 6. Find the even numbers in the array and print them to the console using console.log()
 
-let even = [numbers];
 for(let number of numbers) {
     if(number % 2 === 0) {
-        even.push(number);
+        console.log(number);
     }
 }
-console.log(even);
 
 // 7. Find the odd numbers in the array and print them to the console using console.log()
 
-let odd = [numbers];
 for(let number of numbers) {
     if(number % 2 !== 0) {
-        odd.push(number);
+        console.log(number);
     }
 }
-console.log(odd);
 
 // 8. Find the numbers in the array that is divisible by 5 and print them to the console using console.log()
 
-let divisible = [numbers];
 for(let number of numbers) {
     if(number % 5 === 0) {
-        divisible.push(number);
+        console.log(number);
     }
 }
-console.log(divisible);
-
 // 9. Log all the element of the array one by one
 
-console.log(sum);
-console.log(average);
-console.log(even);
-console.log(odd);
-console.log(divisible);
-console.log(divisible_3);
+for(let number of numbers) {
+    console.log(number)
+}
 
 // 10. Find all the number in the array that is divisible by 3
 
-let divisible_3 = [numbers];
 for(let number of numbers) {
     if(number % 3 === 0) {
-        divisible_3.push(number);
+        console.log(number);
     }
 }
-console.log(divisible_3);
