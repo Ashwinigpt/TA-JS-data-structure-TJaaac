@@ -48,4 +48,4 @@ delete students.isAdult;
 
 // 13. Update the value of the key batch in the object `students` and print it using `console.log`
 
-console.log(students);
+console.log(students.batch);
