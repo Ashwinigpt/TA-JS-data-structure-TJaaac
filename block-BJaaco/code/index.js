@@ -4,14 +4,68 @@ let userIds = [1230, 234, 1278, 984, 763, 900];
 
 // 1. Add all the values of numbers and userIds array into the new newly created array named `collection`
 
+let sumNumbers = 0;
+for(let i = 0; i < numbers.length; i++){
+  sumNumbers += numbers[i];
+}
+console.log(sumNumbers);
+
+let sumUserIds = 0;
+for(let i = 0; i < userIds.length; i++){
+  sumUserIds += userIds[i];
+}
+console.log(sumUserIds);
+
+let collection = [sumNumbers + sumUserIds];
+console.log(collection);
+
 // 2. Add all the even numbers from both arrays numbers and userIds into a newly created array named `evenCollection`
 
+let evenNumbers = 0;
+for(let i = 0; i < numbers.length; i++) {
+  if(numbers[i] % 2 === 0) {
+    evenNumbers += numbers[i];
+  }
+}
+console.log(evenNumbers);
+
+let evenUserIds = 0;
+for(let i = 0; i < userIds.length; i++) {
+  if (numbers[i] % 2 === 0) {
+    evenUserIds += userIds[i];
+  } 
+}
+console.log(evenUserIds);
+
+let evenCollection = [evenNumbers + evenUserIds];
+console.log(evenCollection);
+
 // 3. Add all the odd numbers from both arrays numbers and userIds into a newly created array named `oddCollection`
+
+let oddNumbers = 0;
+for(let i = 0; i < numbers.length; i++) {
+  if(numbers[i] % 2 !== 0) {
+    oddNumbers += numbers[i];
+  }
+}
+console.log(oddNumbers);
+
+let oddUserIds = 0;
+for(let i = 0; i < userIds.length; i++) {
+  if (userIds[i] % 2 !== 0) {
+    oddUserIds += userIds[i];
+  } 
+}
+console.log(oddUserIds);
+
+let oddCollection = [oddNumbers + oddUserIds];
+console.log(oddCollection);
+
 
 /*
   @param means parameter
 
- 4. Write a function named times which accets two parameter and return an array. 
+ 4. Write a function named times which accepts two parameter and return an array. 
 
   @param times (number)
   @param character (string)
@@ -24,9 +78,15 @@ let userIds = [1230, 234, 1278, 984, 763, 900];
     times(5); // ['test', 'test', 'test', 'test', 'test']
 */
 
-function times() {
-  // Your code
+
+function times(number, letter = "test") {
+  let array = [];
+  for (let i = 0; i < number; i++) {
+    array.push(letter);
+  }
+  return array;
 }
+
 
 // Uncomment the code below and test the output
 
@@ -48,8 +108,12 @@ function times() {
     revert(['Ryan', 'John', 'Bran']); //['Bran', 'John', 'Ryan']
 */
 
-function revert() {
-  // your code
+function revert(revert) {
+  let array = [];
+  for (let i = revert.length-1; i >= 0; i--) {
+    array[i] = revert[i];
+    console.log(array[i]);
+  }
 }
 
 // Uncomment the code below and test the output
@@ -70,8 +134,15 @@ function revert() {
     clear(['Ryan', null, 0,  'John', 'Bran']); //['Bran', 'John', 'Ryan']
 */
 
-function clear() {
-  // your code
+
+function clear(clear) {
+  let array = [];
+  for(let i = clear.length-1; i >=0; i--){
+    if(Boolean(clear[i]) === true) {
+    array[i] = clear[i];
+    console.log(array[i]);
+   }
+  }
 }
 
 // Uncomment the code below and test the output
@@ -81,7 +152,7 @@ function clear() {
 
 /*
 
- 6. Write a function named arrayToObj which accepts an array and return an object
+ 7. Write a function named arrayToObj which accepts an array and return an object
  where the key will be the index of array and value will be the element of the array.
 
   @param arr (array)
@@ -93,9 +164,15 @@ function clear() {
     arrayToObj(['Ryan', 'John']); // {0: 'Ryan', 1: 'John'}
 */
 
-function arrayToObj() {
-  // your code
+function arrayToObj(test) {
+  let object= [];
+  for (let i = 0; i < test.length; i++) {
+    object[i] = test[i];
+    console.log(object);
+  }
+  return object;
 }
+
 
 // Uncomment the code below and test the output
 // console.log(arrayToObj([1, 2, 3, 4])); // {0: 1, 1: 2, 2: 3, 3: 4}
