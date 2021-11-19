@@ -165,10 +165,9 @@ function clear(clear) {
 */
 
 function arrayToObj(test) {
-  let object= [];
+  let object= {};
   for (let i = 0; i < test.length; i++) {
     object[i] = test[i];
-    console.log(object);
   }
   return object;
 }
