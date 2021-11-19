@@ -18,18 +18,18 @@ let newUser = user;
 
 2. Answer the following with reason:
 
-- `user == newUser;` // output and reason
-- `user === newUser;`
-- `user.name === newUser.name;`
-- `user.name == newUser.name;`
-- `user.sibling == newUser.sibling;`
-- `user.sibling === newUser.sibling;`
-- `user.sibling == allBrothers;`
-- `user.sibling === allBrothers;`
-- `brothersCopy === allBrothers;`
-- `brothersCopy == allBrothers;`
-- `brothersCopy == user.sibling;`
-- `brothersCopy === user.sibling;`
-- `brothersCopy[0] === user.sibling[0];`
-- `brothersCopy[1] === user.sibling[1];`
-- `user.sibling[1] === newUser.sibling[1];`
+- `user == newUser;` // output and reason // true // reason is both object are stored at same address.
+- `user === newUser;` // true // reason is both object are stored at same address.
+- `user.name === newUser.name;` // true // reason is both object are stored at same address.
+- `user.name == newUser.name;` // true // reason is both object are stored at same address.
+- `user.sibling == newUser.sibling;` // true // reason is both object are stored at same address.
+- `user.sibling === newUser.sibling;` // true // reason is both object are stored at same address.
+- `user.sibling == allBrothers;` // false // reason is both object are stored at different address.
+- `user.sibling === allBrothers;` // false // reason is both object are stored at different address.
+- `brothersCopy === allBrothers;` // false // reason is both object are stored at different address.
+- `brothersCopy == allBrothers;` //false // reason is both object are stored at different address.
+- `brothersCopy == user.sibling;` // true // reason is both object are stored at same address.
+- `brothersCopy === user.sibling;` // true // reason is both object are stored at same address.
+- `brothersCopy[0] === user.sibling[0];` // true // reason is both object are stored at same address.
+- `brothersCopy[1] === user.sibling[1];` // true // reason is both object are stored at same address.
+- `user.sibling[1] === newUser.sibling[1];` // true // reason is both object are stored at same address.
