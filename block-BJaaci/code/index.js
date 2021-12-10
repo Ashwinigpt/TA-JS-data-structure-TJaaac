@@ -100,13 +100,13 @@ console.log(movies[1].genres[0]);
 
 // 18. Log all the genres of the first movie one by one
 
-for(let i = 0; i < 3; i++) {
+for(let i = 0; i < movies.length; i++) {
   console.log(movies[0].genres[i]);
 }
 
 // 19. Log all the genres of the second movie one by one
 
-for(let i = 0; i < 3; i++) {
+for(let i = 0; i < movies.length; i++) {
   console.log(movies[1].genres[i]);
 }
 
@@ -136,7 +136,7 @@ if(movies.year > 2017) {
 
 // 23. Log the title of all three movies one by one.
 
-for(let i = 0; i < 3; i++) {
+for(let i = 0; i < movies.length; i++) {
   console.log(movies[i].title);
 }
 
