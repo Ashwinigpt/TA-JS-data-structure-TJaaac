@@ -111,9 +111,9 @@ function times(number, letter = "test") {
 function revert(revert) {
   let array = [];
   for (let i = revert.length-1; i >= 0; i--) {
-    array[i] = revert[i];
-    console.log(array[i]);
+    array.push(revert[i]);
   }
+return array;
 }
 
 // Uncomment the code below and test the output
@@ -139,10 +139,10 @@ function clear(clear) {
   let array = [];
   for(let i = clear.length-1; i >=0; i--){
     if(Boolean(clear[i]) === true) {
-    array[i] = clear[i];
-    console.log(array[i]);
+    array.push(clear[i]);
    }
   }
+  return array;
 }
 
 // Uncomment the code below and test the output
