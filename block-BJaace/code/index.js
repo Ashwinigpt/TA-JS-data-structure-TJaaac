@@ -32,7 +32,7 @@ colors[colors.length - 1] = "ultraviolet";
 
 // 9. Now, Find the length of the array named `colors`.
 
-console.log(`${colors.length}`);
+console.log(colors.length);
 
 // 10. Create a new variable called fourthColor and set it equal to the fourth color in the list.
 
