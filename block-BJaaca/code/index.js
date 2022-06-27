@@ -9,15 +9,15 @@ let character = {};
 
 //  Re-assign the value of `character` variable to and object with the key `characterName` and value of "Arya"
 
-character = {
-  characterName = "Arya",
+let character2 = {
+  characterName: "Arya",
 };
 
 // - A variable named `age` is predefined with value 20. Add a new key named `character-age` with the value of `age` variable i.e 20 (don't use the value 20)
 
 let age = 20;
 
-character["character-age"] = age;
+character["character.age"] = age;
 
 // - Add a new key `sur name` with the value of the surname of the character i.e "Stark". (Don't remove the space between `sur` and `name`)
 
@@ -62,7 +62,7 @@ character.isAdult = character.age > 18 ? true : false;
 // - Add a new method (function inside objects are called methods) named `changeIsAdult`. When called should be able to flip the value of `isAdult` from true to false and false to true.
 
 character.changeIsAdult = function (){
-    character.isAdult = ! character.isAdult;
+    character.isAdult = !character.isAdult;
 }
 
 // - Add a new key with the name stored in variable `keyName` defined below i.e `playedBy` (use [] for computed property) and the value of "Maisie Williams"
