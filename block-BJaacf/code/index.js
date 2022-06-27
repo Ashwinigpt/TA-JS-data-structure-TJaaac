@@ -13,7 +13,7 @@ console.log(sum);
 // 3. Calculate the average of array items and print it to the console using console.log()
 
 let average = 0; 
-let sum = 0;
+let sum1 = 0;
 for(let i = 0; i < numbers.length; i++) {
     sum += numbers[i];
     average = sum / numbers.length;
